@@ -13,9 +13,9 @@
   
   ## Problem Description
    In this project, the main focus is to detect/locate the anomalies such as cloud shadow, double plant, planter skip, standing water, 
-   water way and weed cluster in the farmland as this affects the yield of the farmland. 
-   The goal of this project is to classify the images into one of the six categories.  
-   The aim is to find/build the Deep learning (Neural Network) model that will help us classify the image into one of the six categories with high accuracy.
+   water way and weed cluster in the farmland as this affects the yield of the farmland. The goal of this project is to classify the images into one of the six 
+   categories. The aim is to find/build the Deep learning (Neural Network) model that will help us classify the image into one of the six categories with high 
+   accuracy.
     
   ## Dataset Description
   The dataset used in this project is a subset of the Agriculture-Vision dataset. 
