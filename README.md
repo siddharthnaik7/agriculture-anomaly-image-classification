@@ -12,42 +12,42 @@
   Finally, a comparison with other different techniques is introduced.
   
   ## Problem Description
-    In this project, the main focus is to detect/locate the anomalies such as cloud shadow, double plant, planter skip, standing water, 
-    water way and weed cluster in the farmland as this affects the yield of the farmland. 
-    The goal of this project is to classify the images into one of the six categories.  
-    The aim is to find/build the Deep learning (Neural Network) model that will help us classify the image into one of the six categories with high accuracy.
+   In this project, the main focus is to detect/locate the anomalies such as cloud shadow, double plant, planter skip, standing water, 
+   water way and weed cluster in the farmland as this affects the yield of the farmland. 
+   The goal of this project is to classify the images into one of the six categories.  
+   The aim is to find/build the Deep learning (Neural Network) model that will help us classify the image into one of the six categories with high accuracy.
     
   ## Dataset Description
-    The dataset used in this project is a subset of the Agriculture-Vision dataset. 
-    The challenge dataset contains 21,061 aerial farmland images captured throughout 2019 across the US. 
-    Each image consists of four 512x512 color channels, which are RGB and Near Infra-red (NIR). 
-    Each image also has a boundary map and a mask. 
-    The boundary map indicates the region of the farmland, and the mask indicates valid pixels in the image. 
-    Regions outside of either the boundary map or the mask are not evaluated. 
-    These types of field anomalies have great impacts on the potential yield of farmlands; therefore it is extremely important to accurately locate them. 
-    In the Agriculture-Vision dataset, these six patterns are stored separately as binary masks due to potential overlaps between patterns. 
-    This dataset contains six types of annotations: Cloud shadow, Double plant, Planter skip, Standing Water, Waterway and Weed cluster. 
-    Each field image has a file name in the format of (field id)_(x1)-(y1)-(x2)-(y2).(jpg/png). 
-    Each field id uniquely identifies the farmland that the image is cropped from, and (x1, y1, x2, y2) is a 4-tuple indicating the position in which the image is cropped.
-    The flow of the classification model/s is as follows:-
+  The dataset used in this project is a subset of the Agriculture-Vision dataset. 
+  The challenge dataset contains 21,061 aerial farmland images captured throughout 2019 across the US. 
+  Each image consists of four 512x512 color channels, which are RGB and Near Infra-red (NIR). 
+  Each image also has a boundary map and a mask. 
+  The boundary map indicates the region of the farmland, and the mask indicates valid pixels in the image. 
+  Regions outside of either the boundary map or the mask are not evaluated. 
+  These types of field anomalies have great impacts on the potential yield of farmlands; therefore it is extremely important to accurately locate them. 
+  In the Agriculture-Vision dataset, these six patterns are stored separately as binary masks due to potential overlaps between patterns. 
+  This dataset contains six types of annotations: Cloud shadow, Double plant, Planter skip, Standing Water, Waterway and Weed cluster. 
+  Each field image has a file name in the format of (field id)_(x1)-(y1)-(x2)-(y2).(jpg/png). 
+  Each field id uniquely identifies the farmland that the image is cropped from, and (x1, y1, x2, y2) is a 4-tuple indicating the position in which the image is cropped.
+  The flow of the classification model/s is as follows:-
     
  <img src='Images/Flow.png' raw=true/>
     
   ## Models Developed:
 
-    o Base Model (Only CNN)
+  o Base Model (Only CNN)
 
-    o Fine Tuning with VGG16 Model
+  o Fine Tuning with VGG16 Model
 
-    o Resnet InceptionV2 Model with Oversampling
+  o Resnet InceptionV2 Model with Oversampling
 
-    o Depthwise Seperable Model
+  o Depthwise Seperable Model
 
-    o Fine Tuning with VGG19 Model
+  o Fine Tuning with VGG19 Model
 
-    o VGG19 Model with Oversampling
+  o VGG19 Model with Oversampling
 
-    o Densenet Model
+  o Densenet Model
   
   ## Model Comparision
 
